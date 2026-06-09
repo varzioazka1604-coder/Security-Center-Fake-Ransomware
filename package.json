@@ -1,0 +1,32 @@
+{
+  "name": "security-center",
+  "version": "1.0.0",
+  "description": "Fake ransomware prank application",
+  "main": "main.js",
+
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+
+  "author": "Zio",
+  "license": "MIT",
+
+  "devDependencies": {
+    "electron": "^42.3.3",
+    "electron-builder": "^26.0.12"
+  },
+
+  "build": {
+    "appId": "com.zio.securitycenter",
+    "productName": "Security Center",
+
+    "mac": {
+      "target": "dir"
+    },
+
+    "win": {
+      "target": "portable"
+    }
+  }
+}
